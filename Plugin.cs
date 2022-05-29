@@ -1,4 +1,5 @@
-﻿using IPA;
+﻿using PosFix;
+using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
 using PosFix.Configuration;
@@ -29,11 +30,11 @@ namespace PosFix
         [OnStart]
         public void OnApplicationStart()
         {
-            Log.Info("Posistion reset");
             _resetPos = new GameObject("resetPos").AddComponent<OVRResetOrientation>();
             _resetPos.resetButton = OVRInput.RawButton.X;
             GameObject.DontDestroyOnLoad(_resetPos);
             Log.Info("Posistion reset");
+            PosFix.Setup();
         }
 
             [OnExit]

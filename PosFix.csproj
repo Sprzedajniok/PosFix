@@ -43,6 +43,9 @@
     <Reference Include="BSML">
       <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Beat Saber\Plugins\BSML.dll</HintPath>
     </Reference>
+    <Reference Include="BS_Utils">
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Beat Saber\Plugins\BS_Utils.dll</HintPath>
+    </Reference>
     <Reference Include="Oculus.VR">
       <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Beat Saber\Beat Saber_Data\Managed\Oculus.VR.dll</HintPath>
     </Reference>
@@ -98,6 +101,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PosFix.cs" />
     <Compile Include="Configuration\PluginConfig.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="PosFixController.cs" />
@@ -108,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')" />
+    <None Include="MLModel1.mbconfig" />
     <None Include="PosFix.csproj.user" Condition="Exists('PosFix.csproj.user')" />
     <EmbeddedResource Include="Views\Settings.bsml" />
   </ItemGroup>
