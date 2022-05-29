@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "PosFix",
+  "name": "PosFix",
+  "author": "Sprzedajniok",
+  "version": "0.0.1",
+  "description": "Resets player pos relative to the platform",
+  "gameVersion": "1.22.0",
+  "dependsOn": {
+    "BSIPA": "^4.2.0",
+    "BeatSaberMarkupLanguage": "^1.6.1"
+  }
+}

@@ -1,0 +1,9 @@
+C:\Users\Panda\source\repos\PosFix\PosFix\bin\Debug\PosFix.dll
+C:\Users\Panda\source\repos\PosFix\PosFix\bin\Debug\PosFix.pdb
+C:\Users\Panda\source\repos\PosFix\PosFix\obj\Debug\PosFix.csproj.AssemblyReference.cache
+C:\Users\Panda\source\repos\PosFix\PosFix\obj\Debug\PosFix.csproj.CoreCompileInputs.cache
+C:\Users\Panda\source\repos\PosFix\PosFix\obj\Debug\PosFix.dll
+C:\Users\Panda\source\repos\PosFix\PosFix\obj\Debug\PosFix.pdb
+C:\Users\Panda\source\repos\PosFix\PosFix\bin\Debug\BSML.dll
+C:\Users\Panda\source\repos\PosFix\PosFix\bin\Debug\BSML.pdb
+C:\Users\Panda\source\repos\PosFix\PosFix\obj\Debug\PosFix.csproj.CopyComplete

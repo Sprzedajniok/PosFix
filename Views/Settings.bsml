@@ -1,0 +1,15 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+	xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'
+	>
+  <settings-container>
+    <horizontal horizontal-fit="PreferredSize">
+      <checkbox-setting apply-on-change="true" value="EnableChecks" text="Enable Posistion fix"/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
+      <checkbox-setting apply-on-change="true" value="EnableFPFC" text="Enable Posistion fix in fpfc"/>
+    </horizontal>
+    <horizontal horizontal-fit="PreferredSize">
+      <text text="debug"/>
+    </horizontal>
+  </settings-container>
+</bg>

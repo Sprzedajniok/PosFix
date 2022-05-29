@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "X1t3Ix5KsITaird99aQVICF4wWxY23kL3q0kZ4W0RsjcGRYdV0yK3B3gozTtys7mqPPyvPrPUWLsGFoa+E2/3g==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Panda\\source\\repos\\PosFix\\PosFix\\PosFix.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package BeatSaberModdingTools.Tasks. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, Package source",
+      "libraryId": "BeatSaberModdingTools.Tasks",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
+}
