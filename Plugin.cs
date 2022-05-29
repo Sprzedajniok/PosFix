@@ -12,8 +12,8 @@ namespace PosFix
     [Plugin(RuntimeOptions.SingleStartInit)]
     public class Plugin
     {
-        internal static Plugin Instance { get; private set; }
-        internal static IPALogger Log { get; private set; }
+        internal static Plugin Instance { get; set; }
+        internal static IPALogger Log { get; set; }
         private OVRResetOrientation _resetPos;
 
         [Init]
