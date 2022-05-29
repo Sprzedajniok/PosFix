@@ -43,6 +43,9 @@
     <Reference Include="BSML">
       <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Beat Saber\Plugins\BSML.dll</HintPath>
     </Reference>
+    <Reference Include="Oculus.VR">
+      <HintPath>..\..\..\..\..\..\SteamLibrary\steamapps\common\Beat Saber\Beat Saber_Data\Managed\Oculus.VR.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

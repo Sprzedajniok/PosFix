@@ -19,6 +19,7 @@ namespace PosFix
     {
         internal static Plugin Instance { get; private set; }
         internal static IPALogger Log { get; private set; }
+        private OVRResetOrientation _resetPos;
 
         [Init]
         /// <summary>
@@ -52,9 +53,11 @@ namespace PosFix
         public void OnApplicationStart()
         {
 
+            _resetPos = new GameObject("SprzedajniokowyResetowacz").AddComponent<OVRResetOrientation>();
+            _resetPos.resetButton = OVRInput.RawButton.X;
         }
 
-        [OnExit]
+            [OnExit]
         public void OnApplicationQuit()
         {
 

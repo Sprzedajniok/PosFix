@@ -7,3 +7,4 @@ C:\Users\Panda\source\repos\PosFix\PosFix\obj\Debug\PosFix.pdb
 C:\Users\Panda\source\repos\PosFix\PosFix\bin\Debug\BSML.dll
 C:\Users\Panda\source\repos\PosFix\PosFix\bin\Debug\BSML.pdb
 C:\Users\Panda\source\repos\PosFix\PosFix\obj\Debug\PosFix.csproj.CopyComplete
+C:\Users\Panda\source\repos\PosFix\PosFix\bin\Debug\Oculus.VR.dll
