@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("PosFix")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Fixes player posistion relative to the platform")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Sprzedajniok")]
 [assembly: AssemblyProduct("PosFix")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]

@@ -36,7 +36,7 @@ namespace PosFix
             GameObject.DontDestroyOnLoad(_resetPos);
             Log.Info("Posistion reset on startup");
             //Okay so this little piece of shit throws some errors?
-            // -->   PosFix.Setup();
+            // --->  PosFix.Setup();
             // BS_Utils] Caught Exception when executing event: Exception has been thrown by the target of an invocation.
             // [ERROR @ 22:18:22 | BS_Utils]  In Assembly: PosFix, Version = 0.0.1.0, Culture = neutral, PublicKeyToken = null
             //
@@ -54,6 +54,15 @@ namespace PosFix
                 //BUT AT LEAST I KNOW SOMETHING HAPPENS WHEN BUTTON IS PRESSED WOHOOO
                 // [CRITICAL @ 22:27:26 | UnityEngine] NullReferenceException: Object reference not set to an instance of an object
                 // [CRITICAL @ 22:27:26 | UnityEngine] OVRResetOrientation.Update()(at < 56fd09ffbe204ba5b452536e1c7b2566 >:0)
+
+                // NOTE TO MYSELF
+                // using OVRManager.display.RecenterPose(); 
+                // [ERROR @ 18:05:54 | IPA] PosFix OnEnable: System.NullReferenceException: Object reference not set to an instance of an object
+                // [ERROR @ 18:05:54 | IPA]   at PosFix.Plugin.OnApplicationStart()[0x00006] in < 9cc4bb8efaa84bcba18da5ad5da1334e >:0
+                // [ERROR @ 18:05:54 | IPA]   at(wrapper dynamic - method) System.Object.lambda_method(System.Runtime.CompilerServices.Closure, object)
+                // [ERROR @ 18:05:54 | IPA]   at IPA.Loader.PluginExecutor.Enable()[0x0000c] in < 85e5e5773585418d89fcc2712ee48bcc >:0
+                // [ERROR @ 18:05:54 | IPA]   at IPA.Loader.Composite.CompositeBSPlugin +<> c.< OnEnable > b__4_0(IPA.Loader.PluginExecutor plugin)[0x00000] in < 85e5e5773585418d89fcc2712ee48bcc >:0
+                // [ERROR @ 18:05:54 | IPA]   at IPA.Loader.Composite.CompositeBSPlugin.Invoke(IPA.Loader.Composite.CompositeBSPlugin + CompositeCall callback, System.String method)[0x00018] in < 85e5e5773585418d89fcc2712ee48bcc >:0
 
             }
         }

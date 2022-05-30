@@ -17,7 +17,8 @@ namespace PosFix
             BSEvents.gameSceneActive += SongStart;
             BSEvents.menuSceneActive += SongExit;
         }
-        private static void SongStart()
+
+            private static void SongStart()
         {
             // DO MAGIC HERE THAT IT WILL WORK
             Log.Info("TESTING START");
