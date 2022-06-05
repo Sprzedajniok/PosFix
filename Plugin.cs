@@ -14,7 +14,7 @@ namespace PosFix
     {
         internal static Plugin Instance { get; set; }
         internal static IPALogger Log { get; set; }
-        public OVRResetOrientation _resetPos;
+        public OVRResetOrientation _resetPos = new OVRResetOrientation();
 
         [Init]
         public void Init(Config config, IPALogger logger)
@@ -36,7 +36,7 @@ namespace PosFix
             GameObject.DontDestroyOnLoad(_resetPos);
             Log.Info("Posistion reset on startup");
             //Okay so this little piece of shit throws some errors?
-            // --->  PosFix.Setup();
+            PosFix.Setup();
             // BS_Utils] Caught Exception when executing event: Exception has been thrown by the target of an invocation.
             // [ERROR @ 22:18:22 | BS_Utils]  In Assembly: PosFix, Version = 0.0.1.0, Culture = neutral, PublicKeyToken = null
             //
@@ -44,7 +44,7 @@ namespace PosFix
         }
 
         //Dunno, just copied that ovrrresetorientation 
-        private void Update()
+        public void Update()
         {
             if (OVRInput.GetDown(_resetPos.resetButton))
             {
@@ -54,7 +54,7 @@ namespace PosFix
                 //BUT AT LEAST I KNOW SOMETHING HAPPENS WHEN BUTTON IS PRESSED WOHOOO
                 // [CRITICAL @ 22:27:26 | UnityEngine] NullReferenceException: Object reference not set to an instance of an object
                 // [CRITICAL @ 22:27:26 | UnityEngine] OVRResetOrientation.Update()(at < 56fd09ffbe204ba5b452536e1c7b2566 >:0)
-
+                
                 // NOTE TO MYSELF
                 // using OVRManager.display.RecenterPose(); 
                 // [ERROR @ 18:05:54 | IPA] PosFix OnEnable: System.NullReferenceException: Object reference not set to an instance of an object
@@ -71,10 +71,7 @@ namespace PosFix
         public void OnApplicationQuit()
         {
             //Same stuff as before ffs
-            _resetPos = new GameObject("resetPos").AddComponent<OVRResetOrientation>();
-            _resetPos.resetButton = OVRInput.RawButton.X;
-            GameObject.DontDestroyOnLoad(_resetPos);
-            Log.Info("Posistion reset on game exit");
+            Log.Info("dupa");
         }
     }
 }
